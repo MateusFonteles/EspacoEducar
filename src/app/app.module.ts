@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import localePt from '@angular/common/locales/pt';
 import {registerLocaleData} from '@angular/common';
+
 registerLocaleData(localePt);
 
 
@@ -60,6 +61,11 @@ import { UsuariosVisualizarComponent } from './cruds/usuario/usuarios-visualizar
 import { SobreComponent } from './sobre/sobre.component';
 import { ContribuaComponent } from './contribua/contribua.component';
 import { ContatoComponent } from './contato/contato.component';
+import { LoginComponent } from './login/login.component';
+import { CadastroComponent } from './cadastro/cadastro.component';
+import { EsqueciComponent } from './esqueci/esqueci.component';
+
+
 
 @NgModule({
   declarations: [
@@ -92,7 +98,10 @@ import { ContatoComponent } from './contato/contato.component';
     UsuariosVisualizarComponent,
     SobreComponent,
     ContribuaComponent,
-    ContatoComponent
+    ContatoComponent,
+    LoginComponent,
+    CadastroComponent,
+    EsqueciComponent
 
   ],
   imports: [

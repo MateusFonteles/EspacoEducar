@@ -1,0 +1,29 @@
+<section fxLayout="column" fxFlexAlign="stretch">
+
+  
+    <ul class="breadcrumb">
+          <li><a href="/home">Início</a></li>
+          <li><a href="/esqueci">Esqueci</a></li>
+
+        </ul>
+        
+  
+        <h1>Recuperação de Senha</h1>
+        <h3>Informe seu email para recuperar a senha</h3>
+
+        <form>
+
+        <mat-form-field class="full-width" appearance="fill">
+          <mat-label>E-mail</mat-label>
+          <input 
+          [(ngModel)] = "creds.email"
+          name="email" 
+          matInput 
+          placeholder="Informe seu e-mail">
+        </mat-form-field>
+
+          <button (click)="recuperar()"  mat-flat-button color="primary">Recuperar Senha</button>
+    
+      </form>
+  
+  </section>

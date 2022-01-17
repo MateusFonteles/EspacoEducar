@@ -1,0 +1,42 @@
+    <section fxLayout="column" fxFlexAlign="stretch">
+
+  
+        <ul class="breadcrumb">
+              <li><a href="/home">Início</a></li>
+              <li><a href="/login">Login</a></li>
+ 
+            </ul>
+            
+      
+            <h1>Realizar Login</h1>
+
+              <form>
+                  
+                <mat-form-field class="full-width" appearance="fill">
+                    <mat-label>E-mail</mat-label>
+                    <input 
+                    [(ngModel)] = "creds.email" 
+                    name="email" 
+                    matInput 
+                    placeholder="E-mail">
+                  </mat-form-field>
+              
+                  <mat-form-field class="full-width" appearance="fill">
+                      <mat-label>Senha</mat-label>
+                      <input 
+                      [(ngModel)] = "creds.senha" 
+                      name="senha" 
+                      type="password" 
+                      matInput 
+                      placeholder="Senha">
+                    </mat-form-field>  
+
+                    <button mat-raised-button (click)="logar()" color = "primary">Entrar</button>
+          <div class="cadastro-forgot">
+            <a class="button-cadastro" routerLink="/cadastro">Não tenho cadastro</a>
+            <a class="button-forgot-password" routerLink="/esqueci">Esqueci a senha</a>
+          </div>
+
+              </form>
+      
+      </section>

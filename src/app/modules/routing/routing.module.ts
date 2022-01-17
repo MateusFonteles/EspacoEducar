@@ -1,3 +1,4 @@
+import { EsqueciComponent } from './../../esqueci/esqueci.component';
 import { ContatoComponent } from './../../contato/contato.component';
 import { ContribuaComponent } from './../../contribua/contribua.component';
 import { UsuarioCrudComponent } from './../../cruds/usuario/usuario-crud/usuario-crud.component';
@@ -24,6 +25,8 @@ import { AtividadeComponent } from 'src/app/atividade/atividade.component';
 import { CategoriaExcluirComponent } from 'src/app/cruds/categoria/categoria-excluir/categoria-excluir.component';
 import { ArtigoCriarComponent } from 'src/app/cruds/artigo/artigo-criar/artigo-criar.component';
 import { SobreComponent } from 'src/app/sobre/sobre.component';
+import { LoginComponent } from 'src/app/login/login.component';
+import { CadastroComponent } from 'src/app/cadastro/cadastro.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent},
@@ -48,7 +51,10 @@ const routes: Routes = [
   { path: 'adm-usuarios', component: UsuarioCrudComponent},
   { path: 'sobre', component: SobreComponent},
   { path: 'contribua', component: ContribuaComponent},
-  { path: 'contato', component: ContatoComponent}
+  { path: 'contato', component: ContatoComponent},
+  { path: 'login', component: LoginComponent},
+  { path: 'cadastro', component: CadastroComponent},
+  { path: 'esqueci', component: EsqueciComponent}
   
 ];
  
