@@ -1,0 +1,22 @@
+
+  img{
+    max-width: 30%;  
+    align-self: center;
+    margin: 30px; 
+  }
+
+  h1{
+    text-align: center;
+  }
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 30px;
+  }    
+
+.cards a{
+  text-decoration: none;
+}
+
+

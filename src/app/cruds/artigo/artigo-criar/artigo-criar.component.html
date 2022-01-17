@@ -1,0 +1,48 @@
+<section fxLayout="column" fxFlexAlign="stretch">
+
+  
+    <ul class="breadcrumb">
+          <li><a href="/home">Início</a></li>
+          <li><a href="/adm-home">Administração</a></li>
+          <li><a href="/adm-artigos">Artigos</a></li>
+          <li><a href="/criar-artigo">Criar Artigo</a></li>
+        </ul>
+        
+    <mat-card>
+
+        <mat-card-title>Novo Artigo</mat-card-title>
+
+        <form>
+            <mat-form-field>
+                <input matInput placeholder="Título do artigo"
+                    [(ngModel)] ="artigo.titulo" name="titulo" > 
+            </mat-form-field>
+    
+            <mat-form-field>
+                <input matInput placeholder="Descrição do artigo"
+                [(ngModel)] ="artigo.descricao" name="descricao" >
+            </mat-form-field>
+    
+            <mat-form-field>
+                <input matInput placeholder="Texto do artigo"
+                [(ngModel)] ="artigo.texto" name="texto" >
+            </mat-form-field>
+    
+            <mat-form-field>
+                <input matInput placeholder="Autor do artigo"
+                [(ngModel)] ="artigo.autor" name="autor" >
+            </mat-form-field>
+            
+        </form>
+    
+    <button mat-raised-button (click) = "criarArtigo()" color = "primary">
+    Salvar
+</button>
+
+<button mat-raised-button (click) = "cancelar()" color = "accent">
+    Cancelar
+</button>
+
+</mat-card>
+
+</section>

@@ -1,0 +1,32 @@
+  
+    <ul class="breadcrumb">
+      <li><a href="#">Início</a></li>
+      <li><a href="/atividades">Atividades</a></li>
+    </ul>
+
+    <h1>
+      Listagem de atividades
+    </h1>
+  <p fxFlexAlign="center"> 
+    Clique na matéria desejada
+  </p>
+
+  <section class="materiasChips">
+    <mat-chip-list>
+      <mat-chip class="materiaChip" *ngFor= "let categoria of categorias" (click)="selecionarMateria(categoria.nome)">{{categoria.nome}}</mat-chip>
+    </mat-chip-list>
+</section>
+  
+  <section class="cards">
+  <div *ngFor="let atividade of atividades">
+    <!-- <div *ngIf="atividade.materia == materiaSelecionada"> -->
+      <a mat-list-item routerLink="/atividade/{{atividade.id}}"> 
+    <mat-card class="atividade-card">
+      <mat-card-title> {{ atividade.titulo }}</mat-card-title>
+      <img class="imgCard" src="assets\atvExemplo.png" alt="logo">
+      <mat-card-content>{{ atividade.materia }}</mat-card-content>
+      <mat-card-content>{{ atividade.serie }}</mat-card-content>
+</mat-card>
+</a> 
+</div>
+</section>

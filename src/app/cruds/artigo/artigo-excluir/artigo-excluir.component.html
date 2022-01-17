@@ -1,0 +1,31 @@
+<section fxLayout="column" fxFlexAlign="stretch">
+    <ul class="breadcrumb">
+          <li><a href="/home">Início</a></li>
+          <li><a href="/adm-home">Administração</a></li>
+          <li><a href="/adm-artigos">Artigos</a></li>
+          <li><a href="/excluir-artigo/"></a></li>
+        </ul>
+
+<mat-card>
+    <mat-card-title>Excluir Artigo</mat-card-title>
+
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Título do artigo"
+                [value] ="artigo.titulo" name="titulo" disabled> 
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Texto da artigo"
+            [value] ="artigo.texto" name="texto" disabled>
+        </mat-form-field>
+</form>
+
+<button mat-raised-button (click) = "excluirArtigo()" color="primary">
+Excluir
+</button>
+<button mat-raised-button (click) = "cancelar()" color="accent">
+Cancelar
+</button>
+</mat-card>
+</section>
