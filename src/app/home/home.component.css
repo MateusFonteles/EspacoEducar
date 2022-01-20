@@ -5,7 +5,7 @@
     margin: 30px 0; 
 } 
 .texto{ 
-    max-width: 80%;
+    max-width: 90%;
     font-size: 20px; 
     padding-bottom: 20px;
     text-align: justify; 
@@ -17,3 +17,4 @@ img{
     margin-left: auto;
     margin-right: auto;
 }
+

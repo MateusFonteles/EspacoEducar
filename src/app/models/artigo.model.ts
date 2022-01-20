@@ -4,4 +4,5 @@ export interface Artigo {
     autor: string
     descricao: string
     texto: string
+    data: string
 }

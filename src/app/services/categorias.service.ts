@@ -16,7 +16,7 @@ export class CategoriaService {
   showMessage(msg: string, isError: boolean = false): void{
     this.snackBar.open(msg, 'x', {
       duration: 3000,
-      horizontalPosition: "right",
+      horizontalPosition: "center",
       verticalPosition: "top",
       panelClass: isError ? ['msg-error'] :['msg-success']
     })

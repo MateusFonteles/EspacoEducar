@@ -10,7 +10,7 @@ import { ArtigosService } from 'src/app/services/artigos.service';
 export class ArtigoVisualizarComponent implements OnInit {
 
   artigos: Artigo[]
-  displayedColumns = ['id', 'titulo', 'descricao', 'autor', 'action']
+  displayedColumns = ['id', 'titulo', 'descricao', 'autor', 'data', 'action']
 
   constructor(private artigoService: ArtigosService) { }
 

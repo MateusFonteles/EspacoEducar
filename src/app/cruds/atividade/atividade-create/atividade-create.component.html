@@ -1,4 +1,4 @@
-<section fxLayout="column" fxFlexAlign="stretch">
+<section fxLayout="column" fxFlexAlign="center"  fxFlex="50%" fxFlex.xs="100%" fxFlex.sm="100%" class="conteudo"> 
 
   
   <ul class="breadcrumb">
@@ -34,10 +34,15 @@
                   </mat-option>
                 </mat-select>
               </mat-form-field>
-            <mat-form-field>
 
+            <mat-form-field>
               <input matInput placeholder="Descrição da atividade"
                 [(ngModel)] ="atividade.descricao" name="descricao" >
+            </mat-form-field>
+
+            <mat-form-field>
+            <input matInput placeholder="Data de publicação da atividade"
+                [(ngModel)] ="atividade.data" name="data" disabled>
             </mat-form-field>
             
         </form>

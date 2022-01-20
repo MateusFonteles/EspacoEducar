@@ -1,25 +1,26 @@
-<section fxLayout="column" fxFlexAlign="center">
-    <ul class="breadcrumb">
-        <li><a href="#">Início</a></li>
+<section fxLayout="column" fxFlexAlign="center"  fxFlex="50%" fxFlex.xs="90%" fxFlex.sm="70%"> 
+
+        <ul class="breadcrumb">
+            <li><a href="#">Início</a></li>
         <li><a href="/contato">Contato</a></li>
-      </ul>
+    </ul>
 
-      <h1>Entre em contato!</h1>
-
-      <img src="./assets/undraw_inbox_oppv.svg" alt="Imagem de uma pessoa recebendo uma carta.">
-
-
-    <form action="https://formsubmit.co/hello.mateusfonteles@gmail.com" method="POST">
-        <mat-form-field>
-            <input matInput placeholder="Seu nome completo">
-        </mat-form-field>
-
-        <mat-form-field>
-            <input matInput placeholder="Seu email">
-        </mat-form-field>
+        <h1>Entre em contato!</h1>
         
-        <mat-form-field>
-            <input matInput placeholder="Mensagem">
+      <img src="./assets/undraw_inbox_oppv.svg" alt="Imagem de uma pessoa recebendo uma carta.">
+      
+      
+      <form action="https://formsubmit.co/hello.mateusfonteles@gmail.com" method="POST">
+          <mat-form-field>
+              <input matInput placeholder="Seu nome completo">
+            </mat-form-field>
+            
+            <mat-form-field>
+                <input matInput placeholder="Seu email">
+            </mat-form-field>
+            
+        <mat-form-field >
+            <textarea matInput placeholder="Mensagem" class="mensagem"></textarea>
         </mat-form-field>
         
     </form>
@@ -28,4 +29,6 @@
 <button mat-raised-button type="submit" color = "primary">
 Enviar
 </button>
+
+</section>
 

@@ -8,4 +8,5 @@ export interface Atividade {
     imagem: string
     descricao: string
     autor: string
+    data: string
 }

@@ -9,7 +9,7 @@ import { Usuario } from 'src/app/models/usuario.model';
 })
 export class UsuariosVisualizarComponent implements OnInit {
   usuarios: Usuario[]
-  displayedColumns = ['id', 'nome', 'cpf', 'email', 'action']
+  displayedColumns = ['id', 'nome', 'cpf', 'email', 'data', 'action']
 
   constructor(private usuarioService: UsuarioService) { }
 

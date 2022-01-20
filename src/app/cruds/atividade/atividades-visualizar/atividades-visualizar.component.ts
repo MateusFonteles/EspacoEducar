@@ -10,7 +10,7 @@ import { AtividadesService } from 'src/app/services/atividades.service';
 export class AtividadesVisualizarComponent implements OnInit {
 
   atividades: Atividade[]
-  displayedColumns = ['id', 'imagem', 'titulo', 'materia', 'serie', 'descricao', 'action']
+  displayedColumns = ['id', 'imagem', 'titulo', 'materia', 'serie', 'descricao', 'data', 'action']
 
   constructor(private atividadeService: AtividadesService) { }
 

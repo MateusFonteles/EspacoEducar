@@ -22,6 +22,7 @@ export class AtividadeCreateComponent implements OnInit {
   
   series: Serie[]
 
+  dataPub : string = new Date().toLocaleString()
  atividade: Atividade = {
   id: 0,
   titulo:'',
@@ -29,7 +30,8 @@ export class AtividadeCreateComponent implements OnInit {
   materia: null,
   imagem: '',
   descricao: '',
-  autor:''
+  autor:'',
+  data: this.dataPub
  }
  
    constructor(private atividadesService: AtividadesService, 

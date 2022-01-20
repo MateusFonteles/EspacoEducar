@@ -3,10 +3,16 @@ form {
     flex-direction: column;
 }
 
-button {
-    margin: 20px 15px 0px 0px;
+button{
+    width: 15%;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom:15px ;
 }
 
+.conteudo{
+    margin: auto;
+}
 .mat-card-title{
     margin-bottom: 25px;
 

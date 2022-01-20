@@ -11,6 +11,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class AtividadeComponent implements OnInit {
 
   atividade: Atividade
+  materiaSelecionada: string
 
   constructor(
     private atividadesService: AtividadesService, 

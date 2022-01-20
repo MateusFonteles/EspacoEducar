@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Categoria } from '../models/categoria.model';
 import { CategoriaService } from '../services/categorias.service';
 import { Component, OnInit } from '@angular/core';
@@ -14,12 +15,13 @@ export class AtividadesComponent implements OnInit {
 
   categorias: Categoria[]
   atividades: Atividade[] 
-  materiaSelecionada = 'historia'
+  materiaSelecionada:any = ''
 
   constructor(
     private atividadeService : AtividadesService, 
     private matChipsModule:MatChipsModule, 
-    private categoriaService:CategoriaService) { }
+    private categoriaService:CategoriaService,
+    private router: Router) { }
 
   ngOnInit(): void {
     this.atividadeService.read().subscribe(atividades => {
@@ -34,7 +36,11 @@ export class AtividadesComponent implements OnInit {
   
   selecionarMateria(atividade:any): void {
     this.materiaSelecionada = atividade
- 
+    this.atividadeService.showMessage(this.materiaSelecionada)
+  }
+
+  reiniciarMateriaSelecionada(){
+    this.materiaSelecionada = '';
   }
 
 }

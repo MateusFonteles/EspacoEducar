@@ -20,3 +20,14 @@ button {
     font-size: medium;
     margin: 15px;
 }
+
+.conteudo{
+    margin: auto;
+}
+
+button{
+    width: 15%;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom:15px ;
+}

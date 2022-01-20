@@ -13,7 +13,14 @@ form {
     flex-direction: column;
 }
 
-button {
-    margin: 15px;
-    
+button{
+    width: 15%;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom:15px ;
 }
+section {
+    margin: auto;
+}
+
+textarea.mat-input-element {height:200px}

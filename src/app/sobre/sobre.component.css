@@ -12,3 +12,8 @@ p{
     text-align: justify;
 
 }
+
+section{
+    width: 90%;
+    margin: auto;
+}

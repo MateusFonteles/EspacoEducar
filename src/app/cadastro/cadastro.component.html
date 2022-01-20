@@ -1,4 +1,4 @@
-<section fxLayout="column" fxFlexAlign="stretch">
+<section fxFlex="50%" fxFlex.xs="100%" fxFlex.sm="100%" class="conteudo"> 
 
   
     <ul class="breadcrumb">
@@ -12,38 +12,38 @@
 
         <form>
 
-        <mat-form-field class="full-width" appearance="fill">
-            <mat-label>Nome</mat-label>
-            <input          
-            [(ngModel)] = "creds.nome"
-            name="nome" 
-            matInput 
-            placeholder="Nome completo">
+          <mat-form-field>
+            <input matInput placeholder="Nome do usuário"
+            [(ngModel)] ="usuario.nome" name="nome" > 
         </mat-form-field>
 
-        <mat-form-field class="full-width" appearance="fill">
-          <mat-label>E-mail</mat-label>
-          <input 
-          [(ngModel)] = "creds.email"
-          name="email" 
-          matInput 
-          placeholder="O seu melhor e-mail">
+          <mat-form-field>
+            <input matInput placeholder="CPF do usuário"
+            [(ngModel)] ="usuario.cpf" name="cpf" > 
+        </mat-form-field>
+
+          <mat-form-field>
+            <input matInput placeholder="Seu melhor e-mail"
+            [(ngModel)] ="usuario.email" name="email" > 
+        </mat-form-field>
+
+          <mat-form-field>
+            <input matInput placeholder="Senha do usuário"
+            [(ngModel)] ="usuario.senha" name="senha" > 
+        </mat-form-field>
+
+        
+        <mat-form-field>
+            <input matInput placeholder="Data de cadastro do usuário"
+            [(ngModel)] ="usuario.data" name="data" disabled>
         </mat-form-field>
     
-        <mat-form-field class="full-width" appearance="fill">
-            <mat-label>Senha</mat-label>
-            <input             
-            [(ngModel)] = "creds.senha"
-            name="senha" 
-            type="password" 
-            matInput 
-            placeholder="Sua senha">
-          </mat-form-field>  
 
-          <button (click)="cadastrar()"  mat-flat-button color="primary">Cadastre-se</button>
+          <button (click)="criarUsuario()"  mat-flat-button color="primary">Cadastre-se</button>
           <div class="cadastro-login">
             <p>Já tem uma conta? <a class="button-forgot-password" mat-button routerLink="/login">Fazer login</a></p>
           </div>
       </form>
-  
+      
+      
   </section>

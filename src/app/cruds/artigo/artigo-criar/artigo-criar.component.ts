@@ -9,11 +9,14 @@ import { Artigo } from 'src/app/models/artigo.model';
 })
 export class ArtigoCriarComponent implements OnInit {
 
+  dataPub : string = new Date().toLocaleString()
+
   artigo: Artigo = {
     titulo: '',
     texto: '',
     autor: '',
-    descricao:''
+    descricao:'',
+    data: this.dataPub,
   }
  
  

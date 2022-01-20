@@ -13,6 +13,8 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
   
+  selected = ''
+
   public onToggleSidenav = () => {
     this.sidenavToggle.emit();
   }

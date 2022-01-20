@@ -29,6 +29,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import {MatChipsModule} from '@angular/material/chips';
 import {MatSelectModule} from '@angular/material/select';
 import {MatIconModule} from '@angular/material/icon';
+import { MatMenuModule } from '@angular/material/menu';
 
 //Components
 import { AppComponent } from './app.component';
@@ -64,6 +65,9 @@ import { ContatoComponent } from './contato/contato.component';
 import { LoginComponent } from './login/login.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { EsqueciComponent } from './esqueci/esqueci.component';
+import { AtividadesMateriaComponent } from './atividades-materia/atividades-materia.component';
+import { DropzoneComponent } from './dropzone/dropzone.component';
+import { RecuperarSenhaComponent } from './recuperar-senha/recuperar-senha.component';
 
 
 
@@ -101,7 +105,10 @@ import { EsqueciComponent } from './esqueci/esqueci.component';
     ContatoComponent,
     LoginComponent,
     CadastroComponent,
-    EsqueciComponent
+    EsqueciComponent,
+    AtividadesMateriaComponent,
+    DropzoneComponent,
+    RecuperarSenhaComponent,
 
   ],
   imports: [
@@ -127,6 +134,7 @@ import { EsqueciComponent } from './esqueci/esqueci.component';
     MatIconModule,
     HttpClientModule,
     FormsModule,
+    MatMenuModule
 
   ],
   providers: [],

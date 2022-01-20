@@ -1,3 +1,4 @@
+import { RecuperarSenhaComponent } from './../../recuperar-senha/recuperar-senha.component';
 import { EsqueciComponent } from './../../esqueci/esqueci.component';
 import { ContatoComponent } from './../../contato/contato.component';
 import { ContribuaComponent } from './../../contribua/contribua.component';
@@ -14,7 +15,7 @@ import { AtividadeCreateComponent } from '../../cruds/atividade/atividade-create
 import { AdmHomeComponent } from './../../adm-home/adm-home.component';
 import { AtividadeExcluirComponent } from 'src/app/cruds/atividade/atividade-excluir/atividade-excluir.component';
 import { ArtigosComponent } from 'src/app/artigos/artigos.component';
-
+  
 import { NgModule, Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
@@ -27,6 +28,7 @@ import { ArtigoCriarComponent } from 'src/app/cruds/artigo/artigo-criar/artigo-c
 import { SobreComponent } from 'src/app/sobre/sobre.component';
 import { LoginComponent } from 'src/app/login/login.component';
 import { CadastroComponent } from 'src/app/cadastro/cadastro.component';
+import { AtividadesMateriaComponent } from 'src/app/atividades-materia/atividades-materia.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent},
@@ -54,7 +56,8 @@ const routes: Routes = [
   { path: 'contato', component: ContatoComponent},
   { path: 'login', component: LoginComponent},
   { path: 'cadastro', component: CadastroComponent},
-  { path: 'esqueci', component: EsqueciComponent}
+  { path: 'recuperar-senha', component: RecuperarSenhaComponent},
+  { path: 'atividades-materia/:id', component: AtividadesMateriaComponent}
   
 ];
  
